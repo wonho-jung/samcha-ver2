@@ -9,26 +9,21 @@ function Sidebar({ isOpen, toggle }) {
       <div className="sidebar__Icon" onClick={toggle}>
         <FaTimes className="sidebar__FaTimes" />
       </div>
-      <div sidebar__menu>
+      <div className="sidebar__Menu">
         <Link className="sidebar__Link" to="/">
-          Appetizer
+          Appetizer&Munchies
         </Link>
-        <Link className="sidebar__Link" to="/">
-          Munchies
-        </Link>
+
         <Link className="sidebar__Link" to="/">
           Main Meal
         </Link>
         <Link className="sidebar__Link" to="/">
-          Dessert
-        </Link>
-        <Link className="sidebar__Link" to="/">
-          Drink
+          Dessert&Drink
         </Link>
       </div>
       <div className="sidebar__Btn__Warp">
-        <Link to="/" className="sidebar__Route__Link">
-          Order Now
+        <Link to="/Menu" className="sidebar__Route__Link">
+          Full Menu
         </Link>
       </div>
     </Container>

@@ -19,7 +19,7 @@ function Hero() {
             Greatest <br />
             K-food Ever
           </h1>
-          <p className="hero__p">healthy food</p>
+          <p className="hero__p">korean&Japanese restaurant</p>
           <button className="hero__Btn">Place Order</button>
         </div>
       </div>
