@@ -1,0 +1,71 @@
+@media screen and (max-width: 400px) {
+  .sidebar__container {
+    width: 100%;
+  }
+}
+
+.sidebar__FaTimes {
+  color: #000;
+}
+
+.sidebar__Icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebar__Menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 80px);
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar__Meau {
+    grid-template-rows: repeat(3, 60px);
+  }
+}
+.sidebar__Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #000;
+  cursor: pointer;
+}
+.sidebar__Link:hover {
+  color: #e31837;
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar__Btn__Warp {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__Route__Link {
+  background: #e31837;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+.sidebar__Route__Link:hover {
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+}

@@ -1,25 +1,11 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import "./App.css";
-import About from "./components/About";
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-import Menus from "./components/Menus";
-import Pictures from "./components/Pictures";
-import Teams from "./components/Teams";
-import Contacts from "./components/Contacts";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Hero from "./components/Hero/Hero";
 function App() {
   return (
-    <div className="app">
+    <div>
       <Router>
-        <Nav />
-        <Route path="/">
-          <Home />
-          <About />
-          <Menus />
-          <Pictures />
-          <Teams />
-          <Contacts />
-        </Route>
+        <Hero />
       </Router>
     </div>
   );

@@ -1,0 +1,41 @@
+nav {
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.nav__Link {
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .nav__Link {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+}
+
+.nav__Icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #fff;
+}
+.nav__Icon p {
+  transform: translate(-175%, 100%);
+  font-weight: bold;
+}
+.nav__Fork {
+  font-size: 2rem !important;
+  transform: translate(-50%, -15%);
+}
