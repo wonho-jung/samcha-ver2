@@ -11,11 +11,11 @@ function Sidebar({ isOpen, toggle }) {
       </div>
       <div className="sidebar__Menu">
         <Link className="sidebar__Link" to="/">
-          Appetizer&Munchies
+          Lunch
         </Link>
 
         <Link className="sidebar__Link" to="/">
-          Main Meal
+          Diner
         </Link>
         <Link className="sidebar__Link" to="/">
           Dessert&Drink
@@ -23,7 +23,7 @@ function Sidebar({ isOpen, toggle }) {
       </div>
       <div className="sidebar__Btn__Warp">
         <Link to="/Menu" className="sidebar__Route__Link">
-          Full Menu
+          Book Now
         </Link>
       </div>
     </Container>

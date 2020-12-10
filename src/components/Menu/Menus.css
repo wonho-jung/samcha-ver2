@@ -1,8 +1,68 @@
 .menus {
-  width: 100%;
-  height: 500px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(../../assets/samcha.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.menus__Content {
+  height: calc(70vh - 80px);
+  max-height: 100%;
+}
+.menus__Item {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b83227;
+  height: 100vh;
+  max-height: 100%;
+  padding: 0 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+}
+.menus__H1 {
+  font-size: clamp(5rem, 10vw, 10rem);
+  margin-bottom: 1rem;
+  box-shadow: 3px 5px #e9ba23;
+  letter-spacing: 3px;
+}
+.menus__Btns {
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 3rem calc((100vw - 1300px) / 2);
+  background: #150f0f;
+  color: #fff;
+}
+.menus__Btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 9px 30px;
+  border: none;
+  background-color: #e31837;
+  color: #fff;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .menus__Btn:not(:last-child) {
+    margin-right: 1rem !important;
+  }
+  .menus__Btn {
+    padding: 5px 25px;
+  }
+  .menus__Btns {
+    padding: 0;
+  }
+}
+
+.menus__Btn:not(:last-child) {
+  margin-right: 1rem;
+}
+.menus__Btn:hover {
+  background-color: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #000;
 }
