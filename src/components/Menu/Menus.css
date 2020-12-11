@@ -1,7 +1,7 @@
 .menus {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(../../assets/samcha.jpg);
-  height: 70vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -28,39 +28,39 @@
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;
 }
-.menus__Btns {
+.menus__Ul {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  min-height: 100vh;
   padding: 0 3rem calc((100vw - 1300px) / 2);
   background: #150f0f;
   color: #fff;
 }
-.menus__Btn {
+.menus__li {
   text-decoration: none;
+  list-style: none;
   font-size: 1.4rem;
   padding: 9px 30px;
-  border: none;
   background-color: #e31837;
   color: #fff;
   transition: 0.2s ease-out;
   cursor: pointer;
 }
-@media screen and (max-width: 550px) {
-  .menus__Btn:not(:last-child) {
-    margin-right: 1rem !important;
-  }
-  .menus__Btn {
-    padding: 5px 25px;
-  }
-  .menus__Btns {
-    padding: 0;
-  }
+a {
+  color: #fff;
+  text-decoration: none !important;
+}
+a:not(:last-child) {
+  margin-right: 10px;
 }
 
-.menus__Btn:not(:last-child) {
+@media screen and (max-width: 550px) {
+}
+
+.menus__li:not(:last-child) {
   margin-right: 1rem;
 }
-.menus__Btn:hover {
+.menus__li:hover {
   background-color: #ffc500;
   transition: 0.2s ease-out;
   cursor: pointer;

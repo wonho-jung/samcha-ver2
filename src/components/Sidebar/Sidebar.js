@@ -10,14 +10,14 @@ function Sidebar({ isOpen, toggle }) {
         <FaTimes className="sidebar__FaTimes" />
       </div>
       <div className="sidebar__Menu">
-        <Link className="sidebar__Link" to="/">
+        <Link className="sidebar__Link" to="/menus">
           Lunch
         </Link>
 
-        <Link className="sidebar__Link" to="/">
+        <Link className="sidebar__Link" to="/menus">
           Diner
         </Link>
-        <Link className="sidebar__Link" to="/">
+        <Link className="sidebar__Link" to="/menus">
           Dessert&Drink
         </Link>
       </div>

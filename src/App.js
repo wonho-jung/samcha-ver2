@@ -1,9 +1,19 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Dinner from "./components/Dinner/Dinner";
+import Drink from "./components/Drink/Drink";
+
 import Feature from "./components/Feature/Feature";
 import Hero from "./components/Hero/Hero";
+import Lunch from "./components/Lunch/Lunch";
 import Menus from "./components/Menu/Menus";
-import Nav from "./components/Nav/Nav";
+import {
+  Appetizer,
+  Side,
+  Main,
+  Special,
+  Drinks,
+} from "./components/MenusProduct/menudata";
 import { productData, productDataTwo } from "./components/Products/data";
 import Products from "./components/Products/Products";
 
@@ -13,10 +23,10 @@ function App() {
     setIsOpen(!isOpen);
   };
   return (
-    <div>
+    <div className="app">
       <Router>
-        <Switch>
-          <Route exact path="/">
+        <Route exact path="/">
+          <div>
             <Hero isOpen={isOpen} toggle={toggle} />
             <Products
               heading="What are the most popular meals?"
@@ -27,11 +37,29 @@ function App() {
               heading="Sweet Treats and K-Drink"
               data={productDataTwo}
             />
-          </Route>
-          <Route exact path="/menus">
+          </div>
+        </Route>
+        <Route path="/menus">
+          <div>
             <Menus isOpen={isOpen} toggle={toggle} />
-          </Route>
-        </Switch>
+          </div>
+        </Route>
+
+        <Route path="/menus/lunch">
+          <Lunch Main={Main} Side={Side} Appetizer={Appetizer} />
+        </Route>
+
+        <Route path="/menus/dinner">
+          <Dinner
+            Main={Main}
+            Side={Side}
+            Appetizer={Appetizer}
+            Special={Special}
+          />
+        </Route>
+        <Route path="/menus/drink">
+          <Drink Drinks={Drinks} />
+        </Route>
       </Router>
     </div>
   );
