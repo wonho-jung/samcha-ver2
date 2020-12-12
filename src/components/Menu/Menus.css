@@ -1,7 +1,7 @@
 .menus {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(../../assets/samcha.jpg);
-  height: 80vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -32,7 +32,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 0 3rem calc((100vw - 1300px) / 2);
   background: #150f0f;
   color: #fff;
 }

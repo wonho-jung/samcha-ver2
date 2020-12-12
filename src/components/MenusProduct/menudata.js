@@ -131,8 +131,8 @@ export const Side = [
   },
   {
     img: "https://www.placehold.it/250/250",
-    alt: "Chicken Katsu Plate",
-    title: "Chicken Katsu Plate",
+    alt: "Chicken Katsu",
+    title: "Chicken Katsu",
     desc:
       "Breaded deep fried chicken cutlet with salad, orange and fries or rice.",
     price: "$14.00",
@@ -232,8 +232,8 @@ export const Drinks = [
   },
   {
     img: img,
-    alt: "Korean Soju Cocktail",
-    title: "Korean Soju Cocktail",
+    alt: "K-Soju Cocktail",
+    title: "K-Soju Cocktail",
     desc: "Soju with various Ssweet flavors.",
     price: "$13.00",
   },

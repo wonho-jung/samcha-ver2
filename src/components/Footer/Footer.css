@@ -1,0 +1,90 @@
+.footer {
+  background: linear-gradient(
+    to right,
+    rgba(213, 211, 193, 0.7),
+    rgba(213, 211, 193, 0.1)
+  );
+  height: 40vh;
+  max-height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+}
+.footer__logoImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer__img:not(:last-child) {
+  margin-right: 30px;
+}
+.footer__logoImg .footer__img img {
+  max-width: 180px;
+  cursor: pointer;
+}
+.footer__logoImg .footer__img img:hover {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 500px) {
+  .footer__logoImg .footer__img img {
+    max-width: 130px;
+    cursor: pointer;
+  }
+}
+.footer__bottom {
+  background: #150f0f;
+  padding: 50px 20px;
+}
+.bottom__container {
+  width: 100;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bottom__box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+.bottom__box {
+  flex-basis: 18%;
+}
+.bottom__content {
+  list-style: none;
+}
+.bottom__content li {
+  color: #fff;
+  opacity: 0.6;
+  line-height: 30px;
+  transition: 0.3s ease opacity;
+}
+.link {
+  cursor: pointer;
+}
+.link:hover {
+  opacity: 1;
+}
+.samcha__logo {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 540px) {
+  .bottom__box {
+    flex-basis: 80%;
+    margin: 0 auto;
+  }
+}

@@ -10,15 +10,15 @@ function Sidebar({ isOpen, toggle }) {
         <FaTimes className="sidebar__FaTimes" />
       </div>
       <div className="sidebar__Menu">
-        <Link className="sidebar__Link" to="/menus">
-          Lunch
+        <Link className="sidebar__Link" to="/">
+          Home
         </Link>
 
         <Link className="sidebar__Link" to="/menus">
-          Diner
+          Menu
         </Link>
-        <Link className="sidebar__Link" to="/menus">
-          Dessert&Drink
+        <Link className="sidebar__Link" to="/About">
+          About Us
         </Link>
       </div>
       <div className="sidebar__Btn__Warp">
