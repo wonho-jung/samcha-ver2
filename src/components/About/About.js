@@ -1,9 +1,13 @@
 import React from "react";
 import Nav from "../Nav/Nav";
 import Sidebar from "../Sidebar/Sidebar";
+import Map from "./Map";
 import "./About.css";
+import "leaflet/dist/leaflet.css";
 
 function About({ isOpen, toggle }) {
+  const position = [51.505, -0.09];
+
   return (
     <>
       <div className="about">
@@ -15,8 +19,32 @@ function About({ isOpen, toggle }) {
           </div>
         </div>
       </div>
-      <div about__us>
-        <h1>This is going to be content</h1>
+      <div className="about__us">
+        <div className="about__video">
+          <div className="about__left">
+            <h1>About us</h1>
+            ​Paragraph Text. Praesent commodo cursus magna, vel scelerisque nisl
+            consectetur et. Sed posuere consectetur est at lobortis. Cras,
+            dapibus ac facilisis in, meet head chef - Donte Owens.
+          </div>
+          <div className="about__right">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffoodfestmtl%2Fvideos%2F747749062060839%2F&show_text=0&width=560"
+              style={{
+                width: "100%",
+                height: "300px",
+                style: "border:none;overflow:hidden",
+                scrolling: "no",
+                frameborder: "0",
+                allowTransparency: "true",
+                allowFullScreen: "true",
+              }}
+            ></iframe>
+          </div>
+        </div>
+        <div className="about__map">
+          <Map />
+        </div>
       </div>
     </>
   );
