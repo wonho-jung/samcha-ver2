@@ -4,8 +4,8 @@ import Sidebar from "../Sidebar/Sidebar";
 import Map from "./Map";
 import "./About.css";
 import "leaflet/dist/leaflet.css";
-
-function About({ isOpen, toggle }) {
+import Review from "./Review";
+function About({ isOpen, toggle, reviews }) {
   const position = [51.505, -0.09];
 
   return (
@@ -45,6 +45,10 @@ function About({ isOpen, toggle }) {
         <div className="about__map">
           <Map />
         </div>
+        <div className="about__reviews">
+          <Review reviews={reviews} />
+        </div>
+        <div className="about__instagrams"></div>
       </div>
     </>
   );

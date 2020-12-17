@@ -18,6 +18,7 @@ import { productData, productDataTwo } from "./components/Products/data";
 import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer.js";
 import About from "./components/About/About";
+import { reviews } from "./components/About/reviewData";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -64,7 +65,7 @@ function App() {
 
         <Route path="/about">
           <div>
-            <About isOpen={isOpen} toggle={toggle} />
+            <About isOpen={isOpen} toggle={toggle} reviews={reviews} />
           </div>
         </Route>
         <Footer />
