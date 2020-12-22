@@ -7,6 +7,7 @@ import doordash from "../../assets/doordash.jpg";
 import { GiKnifeFork } from "react-icons/gi";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -55,9 +56,15 @@ function Footer() {
           <div className="bottom__box">
             <h2>Menu</h2>
             <ul className="bottom__content">
-              <li className="link">Home</li>
-              <li className="link">About Us</li>
-              <li className="link">Menus</li>
+              <Link to="/">
+                <li className="link">Home</li>
+              </Link>
+              <Link to="/about">
+                <li className="link">About</li>
+              </Link>
+              <Link to="/menus">
+                <li className="link">Menus</li>
+              </Link>
             </ul>
           </div>
         </div>

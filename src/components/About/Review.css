@@ -1,26 +1,26 @@
-.products {
-  min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+.review {
+  min-height: 60vh;
   background: #150f0f;
   color: #fff;
 }
-.products__head {
+.reviews__head {
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 5rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
-.products__Wrapper {
+.reviews__Wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
 }
-.products__Card {
+.reviews__Card {
   margin: 0 2rem;
   line-height: 2;
   width: 300px;
 }
-.product__Info {
+.review__Info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,25 +28,16 @@
   padding: 2rem;
   text-align: center;
 }
-.products__img {
-  height: 300px;
-  min-width: 300px;
-  max-width: 100%;
-  box-shadow: 8px 8px #fdc500;
-}
 
-.product__Title {
+.review__Title {
   font-weight: 400;
   font-size: 1.5rem;
 }
-.product__Desc {
+.review__Desc {
   margin-bottom: 1rem;
 }
-.product__Price {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-.product__Btn {
+
+.review__Btn {
   background: #e31837;
   font-size: 1rem;
   padding: 1rem 4rem;
@@ -54,7 +45,7 @@
   color: #fff;
   transform: 0.2 ease-out;
 }
-.product__Btn:hover {
+.review__Btn:hover {
   background-color: #ffc500;
   transition: 0.2s ease-out;
   cursor: pointer;

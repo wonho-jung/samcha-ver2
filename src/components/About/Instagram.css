@@ -1,0 +1,66 @@
+.instagram h1 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  height: 100vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+  grid-template-areas:
+    "omlet pancake door"
+    "in in door"
+    "budae bbq bbq";
+}
+@media screen and (max-width: 700px) {
+  .grid {
+    height: 1500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "omlet" "pancake" "budae" "in" "bbq" "door";
+  }
+}
+
+.grid__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.grid__box:hover {
+  opacity: 0.4;
+}
+
+.grid__box:nth-child(1) {
+  grid-area: omlet;
+  background: url(../../assets/grid-omlet.jpg);
+}
+
+.grid__box:nth-child(2) {
+  grid-area: in;
+  background: url(../../assets/grid-samchain.jpg);
+}
+.grid__box:nth-child(3) {
+  grid-area: door;
+  background: url(../../assets/grid-door.jpg);
+}
+.grid__box:nth-child(4) {
+  grid-area: pancake;
+  background: url(../../assets/grid-pancake.jpg);
+}
+.grid__box:nth-child(5) {
+  grid-area: budae;
+  background: url(../../assets/grid-budae.jpeg);
+}
+.grid__box:nth-child(6) {
+  grid-area: bbq;
+  background: url(../../assets/grid-bbq.jpg);
+}

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Dinner from "./components/Dinner/Dinner";
-import Drink from "./components/Drink/Drink";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Feature from "./components/Feature/Feature";
 import Hero from "./components/Hero/Hero";
-import Lunch from "./components/Lunch/Lunch";
 import Menus from "./components/Menu/Menus";
 import {
   Appetizer,
@@ -19,6 +16,7 @@ import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer.js";
 import About from "./components/About/About";
 import { reviews } from "./components/About/reviewData";
+import ScrollToTop from "./ScrollToTop";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -28,45 +26,33 @@ function App() {
     <div className="app">
       <Router>
         <Route exact path="/">
-          <div>
-            <Hero isOpen={isOpen} toggle={toggle} />
-            <Products
-              heading="What are the most popular meals?"
-              data={productData}
-            />
-            <Feature />
-            <Products
-              heading="Sweet Treats and K-Drink"
-              data={productDataTwo}
-            />
-          </div>
+          <ScrollToTop />
+          <Hero isOpen={isOpen} toggle={toggle} />
+          <Products
+            heading="What are the most popular meals?"
+            data={productData}
+          />
+          <Feature />
+          <Products heading="Sweet Treats and K-Drink" data={productDataTwo} />
         </Route>
         <Route path="/menus">
-          <div>
-            <Menus isOpen={isOpen} toggle={toggle} />
-          </div>
-        </Route>
+          <ScrollToTop />
 
-        <Route path="/menus/lunch">
-          <Lunch Main={Main} Side={Side} Appetizer={Appetizer} />
-        </Route>
-
-        <Route path="/menus/dinner">
-          <Dinner
+          <Menus
+            isOpen={isOpen}
+            toggle={toggle}
             Main={Main}
             Side={Side}
             Appetizer={Appetizer}
             Special={Special}
+            Drinks={Drinks}
           />
-        </Route>
-        <Route path="/menus/drink">
-          <Drink Drinks={Drinks} />
         </Route>
 
         <Route path="/about">
-          <div>
-            <About isOpen={isOpen} toggle={toggle} reviews={reviews} />
-          </div>
+          <ScrollToTop />
+
+          <About isOpen={isOpen} toggle={toggle} reviews={reviews} />
         </Route>
         <Footer />
       </Router>
