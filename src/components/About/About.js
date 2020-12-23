@@ -8,8 +8,6 @@ import Review from "./Review";
 import Instagram from "./Instagram";
 
 function About({ isOpen, toggle, reviews }) {
-  const position = [51.505, -0.09];
-
   return (
     <div className="bg">
       <div className="about">
@@ -25,11 +23,12 @@ function About({ isOpen, toggle, reviews }) {
         <div className="about__video">
           <div className="about__left">
             <h1>About us</h1>
-            ​Paragraph Text. Praesent commodo cursus magna, vel scelerisque nisl
-            consectetur et. Sed posuere consectetur est at lobortis. Cras,
-            dapibus ac facilisis Sed posuere consectetur est at lobortis. Cras,
-            dapibus ac facilisis in, meet head chef - Donte Owens. Cras, dapibus
-            ac facilisis in, meet head chef - Donte Owens.
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
           </div>
           <div className="about__right">
             <iframe

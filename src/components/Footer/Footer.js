@@ -8,6 +8,7 @@ import { GiKnifeFork } from "react-icons/gi";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import { Link } from "react-router-dom";
+import Samcha from "../../assets/samchaLogo.jpg";
 function Footer() {
   return (
     <>
@@ -30,7 +31,7 @@ function Footer() {
       <div className="footer__bottom">
         <div className="bottom__container">
           <div className="bottom__box">
-            <GiKnifeFork className="samcha__logo" />
+            <img src={Samcha} alt="samcha" className="samcha__logo" />
           </div>
           <div className="bottom__box">
             <h2>Contact Us</h2>
@@ -68,6 +69,9 @@ function Footer() {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="personal">
+        &copy; won project_samcha_v2 {new Date().getFullYear()}
       </div>
     </>
 

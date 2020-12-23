@@ -44,6 +44,7 @@
   border: none;
   color: #fff;
   transform: 0.2 ease-out;
+  border-radius: 1rem;
 }
 .review__Btn:hover {
   background-color: #ffc500;

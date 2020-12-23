@@ -1,6 +1,10 @@
 .lunch {
   max-width: 1100px;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background: #150f0f;
 }
 .lunch__title {
   width: 100%;
@@ -19,7 +23,7 @@
   content: "";
   width: 100px;
   height: 2px;
-  background-color: #ff7720;
+  background-color: #e9ba23;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -28,6 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background: #150f0f;
 }
 .lunch__sigleMenu {
   flex-basis: 430px;
@@ -53,12 +58,12 @@
 .lunch__sigleMenu h4 {
   text-transform: capitalize;
   font-size: 22px;
-  border-bottom: 1px dashed #333;
+  border-bottom: 1px dashed #fff;
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
 .lunch__sigleMenu span {
   float: right;
-  color: #ff7720;
+  color: #e9ba23;
   font-style: italic;
 }

@@ -3,9 +3,6 @@ import "./Hero.css";
 import Nav from "../Nav/Nav";
 import Sidebar from "../Sidebar/Sidebar";
 
-import Products from "../Products/Products";
-import Feature from "../Feature/Feature";
-import { productData, productDataTwo } from "../Products/data";
 function Hero({ isOpen, toggle }) {
   return (
     <div className="hero">

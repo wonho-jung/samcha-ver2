@@ -37,9 +37,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 4rem auto;
   color: #fff;
   background-color: #150f0f;
+  justify-content: center;
+  align-items: center;
 }
 .about__video h1 {
   font-size: clamp(2rem, 2.5vw, 3rem);
@@ -49,11 +51,12 @@
 }
 
 .about__left {
-  flex: 0.7;
+  flex: 0.5;
 }
 .about__left {
   margin-right: 2rem;
 }
+
 @media screen and (max-width: 700px) {
   .about__left {
     flex: 1;

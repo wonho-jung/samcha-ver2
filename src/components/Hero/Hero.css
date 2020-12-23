@@ -47,6 +47,7 @@
   background-color: #e31837;
   color: #fff;
   transition: 0.2s ease-out;
+  border-radius: 1rem;
 }
 .hero__Btn:hover {
   background-color: #ffc500;
