@@ -31,18 +31,10 @@ function About({ isOpen, toggle, reviews }) {
             </p>
           </div>
           <div className="about__right">
-            <iframe
-              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffoodfestmtl%2Fvideos%2F747749062060839%2F&show_text=0&width=560"
-              style={{
-                width: "100%",
-                height: "170px",
-                style: "border:none;overflow:hidden",
-                scrolling: "no",
-                frameborder: "0",
-                allowTransparency: "true",
-                allowFullScreen: "true",
-              }}
-            ></iframe>
+            <img
+              src="https://restaurants-static.skipthedishes.com/images/resized/mobile-6e514f1b868f4e566a1e.png"
+              style={{ height: "200px", borderRadius: "30px" }}
+            />
           </div>
         </div>
         <div className="about__map">
